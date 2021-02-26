@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 // This is the Meeting place for all components
 @NgModule({
   // Where the components go (including the main app component)
-  declarations: [AppComponent, TodosComponent],
+  declarations: [AppComponent, TodosComponent, TodoItemComponent],
   // Add all modules here
   imports: [BrowserModule, AppRoutingModule],
   // Services you want to include go here

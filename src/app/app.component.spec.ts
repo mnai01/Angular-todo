@@ -5,12 +5,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -23,13 +19,15 @@ describe('AppComponent', () => {
   it(`should have as title 'angular-crash-todolist'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-crash-todolist');
+    expect(app.name).toEqual('angular-crash-todolist');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-crash-todolist app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain(
+      'angular-crash-todolist app is running!'
+    );
   });
 });
