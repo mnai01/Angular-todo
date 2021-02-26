@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
+// typescript decorator
+// contains meta data for component
 @Component({
+  // points to app-root element in index.html
   selector: 'app-root',
+  // html template
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // style template
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-crash-todolist';
+  name: string = 'angular-crash-todolist';
 }
