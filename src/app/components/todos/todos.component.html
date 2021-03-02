@@ -1,4 +1,3 @@
-<!-- lets you loop through array -->
-<ul *ngFor="let todo of todos">
-  <li>{{ todo.title }}</li>
-</ul>
+<!-- *ngFor lets you loop through array -->
+<!-- Passing 3 todos from todos component into the todo-item component -->
+<app-todo-item *ngFor="let todo of todos" [todo]="todo"> </app-todo-item>
